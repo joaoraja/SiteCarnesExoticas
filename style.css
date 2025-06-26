@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* RESET GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+  line-height: 1.6;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: #ffce63;
+  text-decoration: underline;
+}
+
+/* BOTÃO DE TEMA */
+.toggle-theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffce63;
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 999;
+}
+
+/* NAVBAR */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 15px 0;
+  background-color: #2c2c2c;
+}
+
+li.menuprincipal {
+  font-size: 18px;
+}
+
+#LOGOPRINCIPAL {
+  height: 80px;
+}
+
+.localizacao {
+  width: 40px;
+}
+
+/* HERO */
+#papeldeparede {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+
+#fraseimg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 2px 2px 8px #000;
+  text-align: center;
+}
+
+.imgdafrase {
+  width: 100%;
+  height: auto;
+}
+
+/* SOBRE NÓS */
+#sobrenos {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 60px auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.txt0 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffce63;
+  margin-bottom: 20px;
+}
+
+#sobrenos p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* PRODUTOS */
+#produtos {
+  margin: 80px 0;
+}
+
+.txt3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffce63;
+  margin-bottom: 20px;
+}
+
+/* CARROSSEL MODERNO */
+.carrossel-modern {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.faixa-carrossel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.card-produto {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  min-width: 280px;
+  max-width: 280px;
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card-produto:hover {
+  transform: scale(1.05);
+}
+
+.card-produto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-produto h4 {
+  font-size: 18px;
+  color: #ffce63;
+  margin: 10px 0 5px 0;
+}
+
+.card-produto p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.btn-carrossel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffce63;
+  color: black;
+  font-size: 30px;
+  border: none;
+  border-radius: 50%;
+  padding: 8px 14px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.btn-carrossel:hover {
+  background-color: #720416;
+  color: white;
+}
+
+.btn-carrossel.prev {
+  left: 0;
+}
+
+.btn-carrossel.next {
+  right: 0;
+}
+
+/* FORMULÁRIO DE RESERVAS */
+#compras {
+  padding: 80px 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  max-width: 600px;
+  margin: 0 auto 100px auto;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.input-toggle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+button {
+  background-color: #ffce63;
+  color: black;
+  padding: 12px 18px;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #720416;
+  color: white;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  color: #ffce63;
+}
+
+.footer-section p,
+.footer-section li {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #999;
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social img {
+  width: 30px;
+  margin: 0 8px;
+  transition: transform 0.3s ease;
+  filter: brightness(1.1);
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+
+/* MODO CLARO */
+body.dark {
+  background-color: #fdfdfd;
+  color: #111;
+}
+
+body.dark nav,
+body.dark nav ul,
+body.dark footer,
+body.dark .carrossel-modern,
+body.dark #sobrenos,
+body.dark #compras {
+  background-color: #ffffff !important;
+  color: #111;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .menuprincipal a,
+body.dark a {
+  color: #111 !important;
+  font-weight: 600;
+}
+
+body.dark a:hover,
+body.dark .menuprincipal a:hover {
+  color: #720416 !important;
+}
+
+body.dark input,
+body.dark textarea {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+body.dark .card-produto {
+  background-color: #fff;
+  color: #111;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+body.dark .card-produto h4 {
+  color: #b00000;
+}
+
+body.dark .card-produto p {
+  color: #444;
+}
+
+body.dark .toggle-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark .btn-carrossel {
+  background-color: #e6e6e6;
+  color: #333;
+}
+
+body.dark .btn-carrossel:hover {
+  background-color: #720416;
+  color: #fff;
+}
+
+body.dark .footer-section p,
+body.dark .footer-section li,
+body.dark .footer-bottom {
+  color: #333;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #fraseimg {
+    font-size: 28px;
+  }
+
+  .toggle-theme {
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+  }
+
+  .card-produto {
+    min-width: 220px;
+  }
+}

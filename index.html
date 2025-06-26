@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delícias das Carnes Exóticas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <button id="toggleTheme" class="toggle-theme">🌗 Tema</button>
+
+  <nav>
+    <ul class="list" id="home">
+      <li class="menuprincipal"><img src="imagens/logoprincipal.png" alt="Logo Site" id="LOGOPRINCIPAL"></li>
+      <li class="menuprincipal"><a href="#home">Home</a></li>
+      <li class="menuprincipal"><a href="#sobrenos">Sobre Nós</a></li>
+      <li class="menuprincipal"><a href="#produtos">Produtos</a></li>
+      <li class="menuprincipal"><a href="#compras">Reservas</a></li>
+      <li class="menuprincipal"><a href="#contato">Contato</a></li>
+      <li class="menuprincipal">
+        <a href="https://www.google.com/maps/place/R.+Volunt%C3%A1rios+da+P%C3%A1tria,+340" target="_blank">
+          <img class="localizacao" src="imagens/localizacao.png" alt="Localização" title="Localização">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="papeldeparede">
+    <h1 id="fraseimg">Delícias das Carnes Exóticas</h1>
+    <img class="imgdafrase" src="paper/fundoimg.png" alt="Imagem de carnes para churrasco.">
+  </div>
+
+  <section id="sobrenos">
+    <h2 class="txt0">Sobre Nós</h2>
+    <p>A Delícias das Carnes Exóticas é um açougue especializado em cortes como avestruz, canguru, jacaré e javali, com ética e sustentabilidade.</p>
+    <p>Oferecemos workshops, degustações e uma experiência culinária única para gourmets e amantes da gastronomia exótica.</p>
+  </section>
+
+  <section id="produtos">
+    <h2 class="txt3">Produtos</h2>
+    <div class="carrossel-modern">
+      <button class="btn-carrossel prev">&#10094;</button>
+      <div class="faixa-carrossel" id="faixaProdutos">
+        <!-- Cards dos produtos -->
+        <div class="card-produto"><img src="imgpicanhas/picanhaargentina.png" alt=""><h4>Picanha Argentina</h4><p>Suculência garantida com selagem perfeita na brasa.</p></div>
+        <div class="card-produto"><img src="imgpicanhas/picanhauruguaia.jpg" alt=""><h4>Picanha Uruguaia</h4><p>Origem britânica, marmoreio intermediário e capa fina.</p></div>
+        <div class="card-produto"><img src="imgpicanhas/picanhamaturatta.jpg" alt=""><h4>Picanha Maturatta</h4><p>Tradicional, macia e com sabor marcante.</p></div>
+        <div class="card-produto"><img src="imgfrangos/asa.png" alt=""><h4>Asa de Frango</h4><p>Perfeita para petiscos ou churrascos suculentos.</p></div>
+        <div class="card-produto"><img src="imgfrangos/Drumette.png" alt=""><h4>Drumette</h4><p>Textura suculenta e sabor defumado irresistível.</p></div>
+        <div class="card-produto"><img src="imgfrangos/filedepeito.png" alt=""><h4>Filé de Peito</h4><p>Rico em proteína, versátil para qualquer prato.</p></div>
+      </div>
+      <button class="btn-carrossel next">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="compras">
+    <h2 class="txt3">Reservas</h2>
+    <form id="formReserva">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label>Email ou CPF:</label>
+        <div class="input-toggle">
+          <input type="radio" id="optionEmail" name="contactOption" value="email" checked />
+          <label for="optionEmail">Email</label>
+          <input type="radio" id="optionCPF" name="contactOption" value="cpf" />
+          <label for="optionCPF">CPF</label>
+        </div>
+        <input type="text" id="contact" name="contact" placeholder="Digite seu Email ou CPF" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" id="btnEnviar">Enviar Reserva</button>
+      <p id="mensagemEnvio" style="display:none;"></p>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>Delícias das Carnes Exóticas</h3>
+        <p>Oferecendo carnes de origem controlada e qualidade incomparável.</p>
+      </div>
+      <div class="footer-section links">
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobrenos">Sobre Nós</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#compras">Reservas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact" id="contato">
+        <h3>Contato</h3>
+        <p>Email: contato@carnesexoticas.com</p>
+        <p>Telefone: (21) 9721-30412</p>
+        <p>Endereço: R. Voluntários da Pátria, 340 - Botafogo, RJ</p>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank"><img src="logosapp/facebook.png" alt="Facebook"></a>
+          <a href="https://instagram.com" target="_blank"><img src="logosapp/instagram.png" alt="Instagram"></a>
+          <a href="https://wa.me/5521972130412" target="_blank"><img src="logosapp/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 Delícias das Carnes Exóticas | Desenvolvido por João Gabriel Raja
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
